@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+#card {
+  height: 420px;
+  width: 280px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#storiyan {
+  height: 100px;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(244, 228, 228);
+  padding: 10px 5px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#card::-webkit-scrollbar {
+  display: none;
+}
+#storiyan::-webkit-scrollbar {
+  display: none;
+}
+.story {
+  height: 77px;
+  width: 77px;
+  border-radius: 50%;
+  border: 2px solid red;
+  overflow: hidden;
+  display: inline-block;
+  margin: 5px;
+}
+.story img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+#full-screen {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: none;
+}
+
+#card #container img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  place-content: center;
+  margin-top: 2px;
+}
+#icon {
+  color: white;
+  position: absolute;
+  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0s;
+  transition: transform ease 0.5s;
+}
+
+#like {
+  font-size: 30px;
+  color: transparent;
+  margin-left: 3px;
+}
+#comment {
+  font-size: 28px;
+}
+#send {
+  font-size: 28px;
+}
