@@ -17,7 +17,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 #card {
-  height: 420px;
+  height: 425px;
   width: 280px;
   background-color: white;
   border: 2px solid black;
@@ -96,4 +96,25 @@ body {
 }
 #send {
   font-size: 28px;
+}
+#like1 {
+  font-size: 30px;
+  color: transparent;
+  margin-left: 3px;
+}
+#comment1 {
+  font-size: 28px;
+}
+#send1 {
+  font-size: 28px;
+}
+#icon1 {
+  color: white;
+  position: absolute;
+  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0s;
+  transition: transform ease 0.5s;
 }

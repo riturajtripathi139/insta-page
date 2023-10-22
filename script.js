@@ -31,7 +31,7 @@ storiyan.addEventListener("click", function (dets) {
     }, 3000)
 
 });
-var con = document.querySelector("#container")
+var con = document.querySelector("#rashmika")
 var love = document.querySelector("#icon")
 var like = document.querySelector("#like")
 var comment = document.querySelector("#comment")
@@ -60,5 +60,36 @@ comment.addEventListener("click", function () {
     alert("this function is not enabled yet")
 })
 send.addEventListener("click", function () {
+    alert("this function is not enabled yet")
+})
+var con1 = document.querySelector("#image")
+var love1 = document.querySelector("#icon1")
+var like1 = document.querySelector("#like1")
+var comment1 = document.querySelector("#comment1")
+var send1 = document.querySelector("#send1")
+var check1 = 0;
+
+con.addEventListener("dblclick", function () {
+
+    love1.style.transform = "translate(-50%, -50%) scale(1)";
+    love1.style.opacity = 0.8;
+    setTimeout(function () { love1.style.opacity = 0; }, 1000)
+    setTimeout(function () {
+        love1.style.transform = "translate(-50%, -50%) scale(0)";
+    }, 2000)
+})
+con1.addEventListener("dblclick", function () {
+    if (check == 0) {
+        like1.style.color = "red";
+        check = 1;
+    } else {
+        like1.style.color = "transparent";
+        check = 0;
+    }
+})
+comment1.addEventListener("click", function () {
+    alert("this function is not enabled yet")
+})
+send1.addEventListener("click", function () {
     alert("this function is not enabled yet")
 })
